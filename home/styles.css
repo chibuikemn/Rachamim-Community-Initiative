@@ -1,0 +1,220 @@
+/* ── RESET & BASE ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --red:        #D00612;
+  --red-dark:   #a3040e;
+  --white:      #FFFFFF;
+  --light-bg:   #f9f9f9;
+  --text:       #1a1a1a;
+  --text-muted: #555;
+  --font:       'Segoe UI', sans-serif;
+}
+
+body { font-family: var(--font); color: var(--text); }
+
+/* ── NAVBAR ── */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 5%;
+  background: var(--white);
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--red);
+  letter-spacing: .5px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: .95rem;
+  transition: color .2s;
+}
+
+.nav-links a:hover { color: var(--red); }
+
+.nav-donate-btn {
+  background: var(--red);
+  color: var(--white) !important;
+  padding: .45rem 1.1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background .2s !important;
+}
+
+.nav-donate-btn:hover { background: var(--red-dark) !important; }
+
+/* ── HERO ── */
+.hero {
+  position: relative;
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  /* placeholder backdrop — swap url() for a real image later */
+  background: linear-gradient(135deg, #a3040e 0%, #D00612 50%, #e84a54 100%);
+  background-size: cover;
+  background-position: center;
+}
+
+/* uncomment and replace path when you have the image:
+.hero { background-image: url('assets/hero.jpg'); } */
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, .45);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 780px;
+  padding: 2rem 1.5rem;
+  color: var(--white);
+}
+
+.hero-eyebrow {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: .6rem;
+}
+
+.hero-content h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+}
+
+.hero-sub {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: rgba(255,255,255,.88);
+  margin-bottom: 2rem;
+}
+
+.hero-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+/* ── BUTTONS ── */
+.btn {
+  display: inline-block;
+  padding: .75rem 1.8rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all .2s;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--red);
+  color: var(--white);
+}
+
+.btn-primary:hover { background: var(--red-dark); color: var(--white); }
+
+.btn-outline {
+  border: 2px solid var(--white);
+  color: var(--white);
+}
+
+.btn-outline:hover { background: var(--white); color: var(--red-dark); }
+
+/* ── IMPACT ── */
+.impact {
+  background: var(--red);
+  padding: 3.5rem 5%;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.impact-card { color: var(--white); }
+
+.impact-number {
+  display: block;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 800;
+  color: var(--white);
+}
+
+.impact-label {
+  display: block;
+  font-size: .95rem;
+  margin-top: .4rem;
+  opacity: .9;
+}
+
+/* ── MISSION ── */
+.mission {
+  background: var(--light-bg);
+  padding: 5rem 5%;
+  text-align: center;
+}
+
+.mission-content {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.section-eyebrow {
+  font-size: .85rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--red);
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.mission-intro {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--text);
+  margin-bottom: 1.2rem;
+}
+
+.mission-body {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+
+  .impact-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .impact-grid { grid-template-columns: 1fr 1fr; }
+}
