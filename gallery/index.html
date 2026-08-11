@@ -10,28 +10,231 @@
 
   <!-- NAV -->
   <nav class="navbar">
-    <div class="nav-logo">Rachamim</div>
+    <div class="nav-logo"><a href="../home/index.html">Rachamim</a></div>
     <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Our Programs</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">Get Involved</a></li>
-      <li><a href="#">News &amp; Events</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#" class="nav-donate-btn">Donate</a></li>
+      <li><a href="../home/index.html">Home</a></li>
+      <li class="nav-dropdown">
+        <a href="../about-us/index.html">About Us</a>
+        <ul class="dropdown">
+          <li><a href="../about-us/our-story/index.html">Our Story</a></li>
+          <li><a href="../about-us/mission-and-vision/index.html">Mission &amp; Vision</a></li>
+          <li><a href="../about-us/our-values/index.html">Our Values</a></li>
+          <li><a href="../about-us/leadership-team/index.html">Leadership Team</a></li>
+          <li><a href="../about-us/annual-reports/index.html">Annual Reports</a></li>
+        </ul>
+      </li>
+      <li class="nav-dropdown">
+        <a href="../our-programs/index.html">Our Programs</a>
+        <ul class="dropdown">
+          <li><a href="../our-programs/education/index.html">Education</a></li>
+          <li><a href="../our-programs/healthcare/index.html">Healthcare</a></li>
+          <li><a href="../our-programs/livelihood/index.html">Livelihood</a></li>
+          <li><a href="../our-programs/community-development/index.html">Community Development</a></li>
+          <li><a href="../our-programs/faith-and-outreach/index.html">Faith &amp; Outreach</a></li>
+        </ul>
+      </li>
+      <li class="nav-dropdown">
+        <a href="../projects/index.html">Projects</a>
+        <ul class="dropdown">
+          <li><a href="../projects/current-projects/index.html">Current Projects</a></li>
+          <li><a href="../projects/completed-projects/index.html">Completed Projects</a></li>
+          <li><a href="../projects/success-stories/index.html">Success Stories</a></li>
+        </ul>
+      </li>
+      <li class="nav-dropdown">
+        <a href="../get-involved/index.html">Get Involved</a>
+        <ul class="dropdown">
+          <li><a href="../get-involved/volunteer/index.html">Volunteer</a></li>
+          <li><a href="../get-involved/donate/index.html">Donate</a></li>
+          <li><a href="../get-involved/partner-with-us/index.html">Partner With Us</a></li>
+          <li><a href="../get-involved/become-a-sponsor/index.html">Become a Sponsor</a></li>
+        </ul>
+      </li>
+      <li><a href="../news-and-events/index.html">News &amp; Events</a></li>
+      <li><a href="../gallery/index.html">Gallery</a></li>
+      <li><a href="../contact/index.html">Contact</a></li>
+      <li><a href="../donate/index.html" class="nav-donate-btn">Donate</a></li>
     </ul>
   </nav>
 
   <!-- PAGE HEADER -->
   <section class="page-header">
+    <p class="page-eyebrow">Our Work in Pictures</p>
     <h1>Gallery</h1>
+    <p class="page-sub">A glimpse into the lives we touch and the communities we serve.</p>
   </section>
 
-  <!-- CONTENT -->
-  <main class="page-content">
-    <p>Content coming soon.</p>
+  <!-- FILTER TABS -->
+  <section class="gallery-filter">
+    <div class="filter-tabs">
+      <button class="filter-tab active" data-filter="all">All</button>
+      <button class="filter-tab" data-filter="education">Education</button>
+      <button class="filter-tab" data-filter="medical">Medical Outreach</button>
+      <button class="filter-tab" data-filter="community">Community Events</button>
+      <button class="filter-tab" data-filter="volunteers">Volunteers</button>
+      <button class="filter-tab" data-filter="worship">Worship</button>
+      <button class="filter-tab" data-filter="training">Training</button>
+    </div>
+  </section>
+
+  <!-- GALLERY GRID -->
+  <main class="gallery-section">
+
+    <!-- Education -->
+    <div class="gallery-category" id="education">
+      <h2 class="gallery-category-title">Education</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item" data-category="education">
+          <div class="gallery-img-placeholder"></div>
+          <p class="gallery-caption">Classroom Session — Primary School Outreach</p>
+        </div>
+        <div class="gallery-item" data-category="education">
+          <div class="gallery-img-placeholder"></div>
+          <p class="gallery-caption">Back-to-School Kit Distribution</p>
+        </div>
+        <div class="gallery-item" data-category="education">
+          <div class="gallery-img-placeholder"></div>
+          <p class="gallery-caption">Reading Program — Community Library</p>
+        </div>
+        <div class="gallery-item" data-category="education">
+          <div class="gallery-img-placeholder"></div>
+          <p class="gallery-caption">Teacher Training Workshop</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Medical Outreach -->
+    <div class="gallery-category" id="medical">
+      <h2 class="gallery-category-title">Medical Outreach</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item" data-category="medical">
+          <div class="gallery-img-placeholder"></div>
+          <p class="gallery-caption">Free Medical Consultation — Rural Nigeria</p>
+        </div>
+        <div class="gallery-item" data-category="medical">
+          <div class="gallery-img-placeholder"></div>
+          <p class="gallery-caption">Health Screening Exercise</p>
+        </div>
+        <div class="gallery-item" data-category="medical">
+          <div class="gallery-img-placeholder"></div>
+          <p class="gallery-caption">Drug Distribution to Patients</p>
+        </div>
+        <div class="gallery-item" data-category="medical">
+          <div class="gallery-img-placeholder"></div>
+          <p class="gallery-caption">Medical Team Debrief</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Community Events -->
+    <div class="gallery-category" id="community">
+      <h2 class="gallery-category-title">Community Events</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item" data-category="community">
+          <div class="gallery-img-placeholder"></div>
+          <p class="gallery-caption">Christmas Food Drive 2024</p>
+        </div>
+        <div class="gallery-item" data-category="community">
+          <div class="gallery-img-placeholder"></div>
+          <p class="gallery-caption">Community Clean-Up Day</p>
+        </div>
+        <div class="gallery-item" data-category="community">
+          <div class="gallery-img-placeholder"></div>
+          <p class="gallery-caption">Women Empowerment Forum</p>
+        </div>
+        <div class="gallery-item" data-category="community">
+          <div class="gallery-img-placeholder"></div>
+          <p class="gallery-caption">Town Hall Meeting</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Volunteers -->
+    <div class="gallery-category" id="volunteers">
+      <h2 class="gallery-category-title">Volunteers</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item" data-category="volunteers">
+          <div class="gallery-img-placeholder"></div>
+          <p class="gallery-caption">Volunteer Orientation Day</p>
+        </div>
+        <div class="gallery-item" data-category="volunteers">
+          <div class="gallery-img-placeholder"></div>
+          <p class="gallery-caption">Volunteers at Work — Field Visit</p>
+        </div>
+        <div class="gallery-item" data-category="volunteers">
+          <div class="gallery-img-placeholder"></div>
+          <p class="gallery-caption">Team Photo — Annual Volunteer Day</p>
+        </div>
+        <div class="gallery-item" data-category="volunteers">
+          <div class="gallery-img-placeholder"></div>
+          <p class="gallery-caption">Volunteer Recognition Ceremony</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Worship -->
+    <div class="gallery-category" id="worship">
+      <h2 class="gallery-category-title">Worship</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item" data-category="worship">
+          <div class="gallery-img-placeholder"></div>
+          <p class="gallery-caption">Praise &amp; Worship Night</p>
+        </div>
+        <div class="gallery-item" data-category="worship">
+          <div class="gallery-img-placeholder"></div>
+          <p class="gallery-caption">Community Prayer Walk</p>
+        </div>
+        <div class="gallery-item" data-category="worship">
+          <div class="gallery-img-placeholder"></div>
+          <p class="gallery-caption">Faith &amp; Outreach Service</p>
+        </div>
+        <div class="gallery-item" data-category="worship">
+          <div class="gallery-img-placeholder"></div>
+          <p class="gallery-caption">Sunday Outreach Program</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Training -->
+    <div class="gallery-category" id="training">
+      <h2 class="gallery-category-title">Training</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item" data-category="training">
+          <div class="gallery-img-placeholder"></div>
+          <p class="gallery-caption">Youth Leadership Conference 2025</p>
+        </div>
+        <div class="gallery-item" data-category="training">
+          <div class="gallery-img-placeholder"></div>
+          <p class="gallery-caption">Skills Acquisition Workshop</p>
+        </div>
+        <div class="gallery-item" data-category="training">
+          <div class="gallery-img-placeholder"></div>
+          <p class="gallery-caption">Livelihood Training — Women Group</p>
+        </div>
+        <div class="gallery-item" data-category="training">
+          <div class="gallery-img-placeholder"></div>
+          <p class="gallery-caption">Staff Capacity Building Session</p>
+        </div>
+      </div>
+    </div>
+
   </main>
+
+  <script>
+    const tabs = document.querySelectorAll('.filter-tab');
+    const categories = document.querySelectorAll('.gallery-category');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        const filter = tab.dataset.filter;
+        categories.forEach(cat => {
+          cat.style.display = (filter === 'all' || cat.id === filter) ? 'block' : 'none';
+        });
+      });
+    });
+  </script>
 
   <!-- FOOTER -->
   <footer class="footer">
@@ -43,12 +246,12 @@
       <div class="footer-col">
         <h4 class="footer-heading">Quick Links</h4>
         <ul class="footer-links">
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Our Programs</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Get Involved</a></li>
-          <li><a href="#">News &amp; Events</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="../about-us/index.html">About Us</a></li>
+          <li><a href="../our-programs/index.html">Our Programs</a></li>
+          <li><a href="../projects/index.html">Projects</a></li>
+          <li><a href="../get-involved/index.html">Get Involved</a></li>
+          <li><a href="../news-and-events/index.html">News &amp; Events</a></li>
+          <li><a href="../contact/index.html">Contact</a></li>
         </ul>
       </div>
       <div class="footer-col">

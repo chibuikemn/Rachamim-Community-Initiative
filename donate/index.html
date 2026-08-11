@@ -10,28 +10,142 @@
 
   <!-- NAV -->
   <nav class="navbar">
-    <div class="nav-logo">Rachamim</div>
+    <div class="nav-logo"><a href="../home/index.html">Rachamim</a></div>
     <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Our Programs</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">Get Involved</a></li>
-      <li><a href="#">News &amp; Events</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#" class="nav-donate-btn">Donate</a></li>
+      <li><a href="../home/index.html">Home</a></li>
+      <li class="nav-dropdown">
+        <a href="../about-us/index.html">About Us</a>
+        <ul class="dropdown">
+          <li><a href="../about-us/our-story/index.html">Our Story</a></li>
+          <li><a href="../about-us/mission-and-vision/index.html">Mission &amp; Vision</a></li>
+          <li><a href="../about-us/our-values/index.html">Our Values</a></li>
+          <li><a href="../about-us/leadership-team/index.html">Leadership Team</a></li>
+          <li><a href="../about-us/annual-reports/index.html">Annual Reports</a></li>
+        </ul>
+      </li>
+      <li class="nav-dropdown">
+        <a href="../our-programs/index.html">Our Programs</a>
+        <ul class="dropdown">
+          <li><a href="../our-programs/education/index.html">Education</a></li>
+          <li><a href="../our-programs/healthcare/index.html">Healthcare</a></li>
+          <li><a href="../our-programs/livelihood/index.html">Livelihood</a></li>
+          <li><a href="../our-programs/community-development/index.html">Community Development</a></li>
+          <li><a href="../our-programs/faith-and-outreach/index.html">Faith &amp; Outreach</a></li>
+        </ul>
+      </li>
+      <li class="nav-dropdown">
+        <a href="../projects/index.html">Projects</a>
+        <ul class="dropdown">
+          <li><a href="../projects/current-projects/index.html">Current Projects</a></li>
+          <li><a href="../projects/completed-projects/index.html">Completed Projects</a></li>
+          <li><a href="../projects/success-stories/index.html">Success Stories</a></li>
+        </ul>
+      </li>
+      <li class="nav-dropdown">
+        <a href="../get-involved/index.html">Get Involved</a>
+        <ul class="dropdown">
+          <li><a href="../get-involved/volunteer/index.html">Volunteer</a></li>
+          <li><a href="../get-involved/donate/index.html">Donate</a></li>
+          <li><a href="../get-involved/partner-with-us/index.html">Partner With Us</a></li>
+          <li><a href="../get-involved/become-a-sponsor/index.html">Become a Sponsor</a></li>
+        </ul>
+      </li>
+      <li><a href="../news-and-events/index.html">News &amp; Events</a></li>
+      <li><a href="../gallery/index.html">Gallery</a></li>
+      <li><a href="../contact/index.html">Contact</a></li>
+      <li><a href="../donate/index.html" class="nav-donate-btn">Donate</a></li>
     </ul>
   </nav>
 
   <!-- PAGE HEADER -->
   <section class="page-header">
-    <h1>Donate</h1>
+    <p class="page-eyebrow">Make a Difference Today</p>
+    <h1>Give With Purpose</h1>
+    <p class="page-sub">Every gift — big or small — restores hope, dignity, and opportunity<br />for the communities we serve.</p>
   </section>
 
-  <!-- CONTENT -->
-  <main class="page-content">
-    <p>Content coming soon.</p>
-  </main>
+  <!-- GIVING TYPE TABS -->
+  <section class="donate-tabs-section">
+    <div class="donate-tabs">
+      <button class="donate-tab active" data-tab="one-time">One-Time</button>
+      <button class="donate-tab" data-tab="monthly">Monthly</button>
+    </div>
+  </section>
+
+  <!-- GIVING OPTIONS -->
+  <section class="giving-options">
+    <div class="giving-grid">
+
+      <div class="giving-card">
+        <div class="giving-icon">&#10084;</div>
+        <h3>One-Time Donation</h3>
+        <p>Make a single gift to support our work across education, healthcare, and community development.</p>
+        <div class="amount-options">
+          <button class="amount-btn" data-amount="10">$10</button>
+          <button class="amount-btn" data-amount="25">$25</button>
+          <button class="amount-btn active" data-amount="50">$50</button>
+          <button class="amount-btn" data-amount="100">$100</button>
+          <button class="amount-btn" data-amount="250">$250</button>
+          <button class="amount-btn custom">Custom</button>
+        </div>
+        <a href="#payment" class="btn btn-primary">Donate Now</a>
+      </div>
+
+      <div class="giving-card">
+        <div class="giving-icon">&#128197;</div>
+        <h3>Monthly Giving</h3>
+        <p>Become a recurring donor and provide sustained support that helps us plan and deliver long-term impact.</p>
+        <div class="amount-options">
+          <button class="amount-btn" data-amount="10">$10</button>
+          <button class="amount-btn active" data-amount="25">$25</button>
+          <button class="amount-btn" data-amount="50">$50</button>
+          <button class="amount-btn" data-amount="100">$100</button>
+          <button class="amount-btn custom">Custom</button>
+        </div>
+        <a href="#payment" class="btn btn-primary">Give Monthly</a>
+      </div>
+
+      <div class="giving-card">
+        <div class="giving-icon">&#128118;</div>
+        <h3>Sponsor a Child</h3>
+        <p>Your sponsorship covers school fees, learning materials, and mentorship for a child in need.</p>
+        <p class="giving-price">From <strong>$30 / month</strong></p>
+        <a href="#payment" class="btn btn-primary">Sponsor a Child</a>
+      </div>
+
+      <div class="giving-card">
+        <div class="giving-icon">&#127973;</div>
+        <h3>Sponsor a Medical Mission</h3>
+        <p>Fund free medical outreaches that bring healthcare to remote and underserved communities.</p>
+        <p class="giving-price">From <strong>$100 / mission</strong></p>
+        <a href="#payment" class="btn btn-primary">Sponsor a Mission</a>
+      </div>
+
+      <div class="giving-card">
+        <div class="giving-icon">&#128218;</div>
+        <h3>Support Education</h3>
+        <p>Help us build classrooms, stock libraries, and train teachers to create lasting educational change.</p>
+        <p class="giving-price">Any amount helps</p>
+        <a href="#payment" class="btn btn-primary">Support Education</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PAYMENT SECTION -->
+  <section class="payment-section" id="payment">
+    <div class="payment-box">
+      <h2>Complete Your Gift</h2>
+      <p class="payment-note">Secure online payments will be available soon via <strong>Stripe</strong> and <strong>PayPal</strong>. In the meantime, please reach out to us directly to give.</p>
+
+      <div class="payment-methods">
+        <div class="payment-badge stripe">&#128274; Stripe — Coming Soon</div>
+        <div class="payment-badge paypal">&#128274; PayPal — Coming Soon</div>
+      </div>
+
+      <p class="payment-alt">To donate now, contact us at <a href="mailto:info@rachamim.org">info@rachamim.org</a> or call <a href="tel:+000000000">+000 000 0000</a>.</p>
+    </div>
+  </section>
 
   <!-- FOOTER -->
   <footer class="footer">
@@ -43,12 +157,12 @@
       <div class="footer-col">
         <h4 class="footer-heading">Quick Links</h4>
         <ul class="footer-links">
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Our Programs</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Get Involved</a></li>
-          <li><a href="#">News &amp; Events</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="../about-us/index.html">About Us</a></li>
+          <li><a href="../our-programs/index.html">Our Programs</a></li>
+          <li><a href="../projects/index.html">Projects</a></li>
+          <li><a href="../get-involved/index.html">Get Involved</a></li>
+          <li><a href="../news-and-events/index.html">News &amp; Events</a></li>
+          <li><a href="../contact/index.html">Contact</a></li>
         </ul>
       </div>
       <div class="footer-col">
